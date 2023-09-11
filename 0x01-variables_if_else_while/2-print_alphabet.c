@@ -1,20 +1,15 @@
 #include <stdio.h>
-
 /**
- *
- * main - Main function
- *
- * Return: 0 as expected
+ * main - entry point
+ * Return: always(0)
  */
+int main(void)
+{	char ch;
 
-int main(void) {
-        char letter = 'a';
-
-        while (letter <= 'z') {
-                        putchar(letter);
-                        letter++;
-                        }
-		putchar("\n");
-	return 0;
+for (ch = 'a' ; ch <= 'z' ; ch++)
+{
+	putchar(ch);
 }
-
+	putchar('\n');
+	return (0);
+}
